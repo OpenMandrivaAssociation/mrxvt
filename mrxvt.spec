@@ -1,5 +1,5 @@
 %define name mrxvt
-%define version 0.5.1
+%define version 0.5.2
 %define release %mkrel 1
 
 Summary: A multi-tabbed X terminal emulator based on rxvt
@@ -15,10 +15,10 @@ BuildRequires: xpm-devel, utempter-devel, X11-devel, libjpeg-devel, libpng-devel
 BuildRequires: ImageMagick
 
 %description
-Mrxvt is a lightweight and powerful multi-tabbed X terminal emulator based on 
-the popular emulators rxvt and aterm. It implements many useful features seen 
+Mrxvt is a lightweight and powerful multi-tabbed X terminal emulator based on
+the popular emulators rxvt and aterm. It implements many useful features seen
 in modern X terminal emulators such as gnome-terminal and konsole while
-remaining lightweight and independent of the GNOME and KDE desktop 
+remaining lightweight and independent of the GNOME and KDE desktop
 environments.
 
 %prep
@@ -77,7 +77,7 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
-%doc AUTHORS COPYING CREDITS FAQ INSTALL NEWS README README.configure TODO ChangeLog
+%doc AUTHORS COPYING INSTALL NEWS README TODO ChangeLog
 %{_bindir}/*
 %{_mandir}/man1/*
 %{_datadir}/pixmaps/*
