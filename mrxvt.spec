@@ -10,7 +10,6 @@ Source0: %{name}-%{version}.tar.bz2
 License: GPL
 Group: Terminals
 Url: http://materm.sourceforge.net
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: xpm-devel, utempter-devel, X11-devel, libjpeg-devel, libpng-devel
 BuildRequires: ImageMagick
 
