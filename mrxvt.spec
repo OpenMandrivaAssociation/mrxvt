@@ -34,16 +34,6 @@ rm -rf %{buildroot}
 rm -rf %{buildroot}/usr/share/doc/mrxvt
 
 # menu entries
-mkdir -p  $RPM_BUILD_ROOT%{_menudir}
-cat << EOF > $RPM_BUILD_ROOT%{_menudir}/%{name}
-?package(%{name}):command="/usr/bin/%{name}" \
-icon="%{name}.png" needs="X11" \
-section="System/Terminals" startup_notify="false" \
-title="Mrxvt" longtitle="A multi-tabbed X terminal emulator" \
-mimetypes="" accept_url="false" \
-multiple_files="false" \
-xdg="true"
-EOF
 
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}.desktop << EOF
@@ -84,7 +74,6 @@ rm -rf %{buildroot}
 %{_miconsdir}/%{name}.png
 %{_iconsdir}/%{name}.png
 %{_liconsdir}/%{name}.png
-%{_menudir}/%{name}
 %dir %_sysconfdir/%name
 %config(noreplace) %_sysconfdir/%name/*
 %{_datadir}/applications/*
