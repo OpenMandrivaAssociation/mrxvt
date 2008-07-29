@@ -1,6 +1,6 @@
 %define name mrxvt
 %define version 0.5.3
-%define release %mkrel 1
+%define release %mkrel 3
 
 Summary: A multi-tabbed X terminal emulator based on rxvt
 Name: %{name}
