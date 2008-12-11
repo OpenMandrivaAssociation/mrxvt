@@ -12,7 +12,7 @@ Group: Terminals
 Url: http://materm.sourceforge.net
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: xpm-devel, utempter-devel, X11-devel, libjpeg-devel, libpng-devel
-BuildRequires: ImageMagick
+BuildRequires: imagemagick
 
 %description
 Mrxvt is a lightweight and powerful multi-tabbed X terminal emulator based on
