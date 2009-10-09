@@ -1,6 +1,6 @@
 %define name mrxvt
 %define version 0.5.3
-%define release %mkrel 4
+%define release %mkrel 5
 
 Summary: A multi-tabbed X terminal emulator based on rxvt
 Name: %{name}
@@ -12,6 +12,8 @@ Group: Terminals
 Url: http://materm.sourceforge.net
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: xpm-devel, utempter-devel, X11-devel, libjpeg-devel, libpng-devel
+# X11 locales are required to build IM support
+BuildRequires:	libx11-common
 BuildRequires: imagemagick
 
 %description
