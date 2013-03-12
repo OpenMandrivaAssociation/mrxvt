@@ -15,11 +15,11 @@ BuildRequires:	libice-devel
 BuildRequires:	libsm-devel
 BuildRequires:	libx11-devel
 BuildRequires:	libxft-devel
-BuildRequires:	libxpm-devel
-BuildRequires:	libxrender-devel
+BuildRequires:	pkgconfig(xpm)
+BuildRequires:	pkgconfig(xrender)
 BuildRequires:	fontconfig-devel
-BuildRequires:	libpng-devel
-BuildRequires:	libjpeg-devel
+BuildRequires:	png-devel
+BuildRequires:	jpeg-devel
 # X11 locales are required to build IM support
 BuildRequires:	libx11-common
 BuildRequires:	imagemagick
