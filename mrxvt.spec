@@ -11,10 +11,10 @@ License:	GPLv2
 Group:		Terminals
 Url:		http://materm.sourceforge.net
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildRequires:	libice-devel
-BuildRequires:	libsm-devel
-BuildRequires:	libx11-devel
-BuildRequires:	libxft-devel
+BuildRequires:	pkgconfig(ice)
+BuildRequires:	pkgconfig(sm)
+BuildRequires:	pkgconfig(x11)
+BuildRequires:	pkgconfig(xft)
 BuildRequires:	pkgconfig(xpm)
 BuildRequires:	pkgconfig(xrender)
 BuildRequires:	fontconfig-devel
