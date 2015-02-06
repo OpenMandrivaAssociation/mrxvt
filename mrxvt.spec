@@ -1,7 +1,7 @@
 Summary:	A multi-tabbed X terminal emulator based on rxvt
 Name:		mrxvt
 Version:	0.5.4
-Release:	5
+Release:	6
 Source0:	%{name}-%{version}.tar.bz2
 License:	GPLv2
 Group:		Terminals
