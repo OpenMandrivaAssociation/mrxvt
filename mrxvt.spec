@@ -5,7 +5,7 @@ Release:	6
 Source0:	%{name}-%{version}.tar.bz2
 License:	GPLv2
 Group:		Terminals
-Url:		http://materm.sourceforge.net
+Url:		https://materm.sourceforge.net
 BuildRequires:	pkgconfig(ice)
 BuildRequires:	pkgconfig(sm)
 BuildRequires:	pkgconfig(x11)
